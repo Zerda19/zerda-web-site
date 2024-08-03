@@ -1880,8 +1880,13 @@ h3 {
   display: flex;
 }
 
-.text-block-6, .text-block-7 {
+.text-block-6 {
   color: var(--accent);
+}
+
+.text-block-7 {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2611,6 +2616,11 @@ h3 {
 
   ._404-grid {
     grid-template-columns: 1fr;
+  }
+
+  .navigation-left {
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
   .box-wrapper {
