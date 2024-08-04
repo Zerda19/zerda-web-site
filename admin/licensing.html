@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Aug 04 2024 13:08:53 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Aug 04 2024 13:30:19 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66a7e30db5a0a8243c7d5bd1" data-wf-site="66a7e30db5a0a8243c7d5b91" lang="en">
 <head>
   <meta charset="utf-8">
@@ -164,13 +164,13 @@
   <script type="text/javascript">
 function convertFormToJSON(form) {
   var array = $(form).serializeArray();
-  var json = {};
+  var json = {
+  "templateId": "wptemplate_4ihUUbms2DRWiWA8",
+  "to": "contact@zerda-consulting.com",
+  "variables":{}
+  };
   $.each(array, function () {
-	"templateId": "wptemplate_4ihUUbms2DRWiWA8",
-    "to": "contact@zerda-consulting.com",
-    "variables": {
-    	json[this.name] = this.value ;
-	}
+		json.variables[this.name] = this.value ;
   });
   return json;
 }
