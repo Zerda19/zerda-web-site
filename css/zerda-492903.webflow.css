@@ -283,6 +283,7 @@ h3 {
 }
 
 .headng.h4 {
+  -webkit-text-stroke-color: var(--gray);
   margin-bottom: 12px;
   font-size: 2.438rem;
   font-weight: 600;
@@ -408,6 +409,7 @@ h3 {
 }
 
 .paragraph {
+  color: var(--black);
   text-align: justify;
   margin-bottom: .5rem;
   padding: 0;
